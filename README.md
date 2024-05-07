@@ -1,6 +1,6 @@
 ## File Analyzer
 
-<a href=fileanalyzer.netlify.app>Website Link</a>
+<a href=fileanalyzer.netlify.app>Website Link</a> <br></br>
 Client side file analyzer to view file metadata and review file extensions.
 
 ## Extra Notes
@@ -9,5 +9,5 @@ The file extensions may not be 100% accurate as there are exceptions to the rule
 
 ## References
 
-https://en.wikipedia.org/wiki/List_of_file_signatures
-https://www.garykessler.net/library/file_sigs.html
+- https://en.wikipedia.org/wiki/List_of_file_signatures
+- https://www.garykessler.net/library/file_sigs.html
