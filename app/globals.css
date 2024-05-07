@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: lightpink;
+	color: black;
+	overflow: hidden;
+}
+
+@media (max-height: 500px) {
+	body {
+		overflow-y: scroll;
+	}
+}
