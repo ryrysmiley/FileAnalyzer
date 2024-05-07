@@ -1,6 +1,6 @@
 ## File Analyzer
 
-[FileAnalyzer Website](fileanalyzer.netlify.app)<br></br>
+[FileAnalyzer Website](https://fileanalyzer.netlify.app)<br></br>
 Client side file analyzer to view file metadata and review file extensions.
 
 ## Extra Notes
