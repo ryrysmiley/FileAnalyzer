@@ -16,10 +16,20 @@ export default function Home() {
 				tempList.push(filesig);
 			}
 		}
+
 		if (tempList.length === 0) {
 			setPossibleExt(null);
 		} else {
-			setPossibleExt(tempList);
+			const maxLength = Math.max(
+				...tempList.map((item) => item["Header (hex)"].length)
+			);
+
+			// Filter the strings to keep only the ones with the longest length
+			const newList = tempList.filter(
+				(item) => item["Header (hex)"].length === maxLength
+			);
+			console.log(newList);
+			setPossibleExt(newList);
 		}
 	}
 
