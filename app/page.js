@@ -28,7 +28,6 @@ export default function Home() {
 			const newList = tempList.filter(
 				(item) => item["Header (hex)"].length === maxLength
 			);
-			console.log(newList);
 			setPossibleExt(newList);
 		}
 	}
@@ -69,6 +68,10 @@ export default function Home() {
 					}
 					setFileHex(hexString.toUpperCase());
 					identifySignatures(hexString.toUpperCase());
+				};
+				reader.onerror = (error) => {
+					console.error("FileReader error:", error);
+					setFileError(true);
 				};
 				reader.readAsArrayBuffer(file);
 			} catch (error) {
